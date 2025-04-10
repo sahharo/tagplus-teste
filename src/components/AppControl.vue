@@ -32,7 +32,7 @@
     </aside>
 
     <div class="servidores-container">
-      <h1 class="titulo-servidores">Quadro de Servidores</h1>
+      <h1 class="titulo-servidores">Quadro de Servidores</h1> 
 
       <main class="servidores-grid">
   <div
@@ -256,7 +256,7 @@ const contarApp = (nome: string) => {
    padding: 20px; 
    gap:20px;
   justify-content: start;
-  min-height: 400px;
+  min-height: 400px; 
   background-color: #1e1e1e;
   grid-auto-rows: min-content;
 }
@@ -275,7 +275,7 @@ height: 100vh;
   margin-bottom: 10px;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  text-align: lef;
+  text-align: left;
 }
 
 .servidor {
@@ -285,6 +285,7 @@ height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 10px;
+/*margin-bottom: 20px; */
 }
 
 .app-card {
