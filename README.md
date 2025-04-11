@@ -1,4 +1,5 @@
 README - Simulador de Gerenciamento de Servidores e Apps
+
 O que é este projeto?
 Este projeto foi criado para simular adicionando apps em servidores, de maneira simples e funcional. O objetivo é gerenciar um cluster de servidores, adicionar novos servidores, alocar apps nesses servidores e lidar com a remoção de servidores e redistribuição dos apps.
 
