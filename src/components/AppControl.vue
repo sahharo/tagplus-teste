@@ -40,25 +40,24 @@
     :key="index"
     class="servidor"
   >
-    <div v-if="servidor.apps.length">
-      <div
-        v-for="(app, idx) in servidor.apps"
-        :key="idx"
-        class="app-card"
-        :style="{ backgroundColor: app.cor }"
-      >
-        <div class="app-sigla">{{ app.sigla }}</div>
-        <div class="app-nome">{{ app.nome }}</div>
-        <div class="app-tempo">Added {{ calcularTempo(app.tempo) }} ago</div>
-      </div>
+  <div class="apps-no-servidor">
+    <div
+      v-if="servidor.apps.length"
+      v-for="(app, idx) in servidor.apps"
+      :key="idx"
+      class="app-card"
+      :style="{ backgroundColor: app.cor }"
+    >
+      <div class="app-sigla">{{ app.sigla }}</div>
+      <div class="app-nome">{{ app.nome }}</div>
+      <div class="app-tempo">Added {{ calcularTempo(app.tempo) }} ago</div>
     </div>
 
-    <div v-else>
-      <div class="app-card vazio">
-        <p style="text-align: center; color: #999;">Servidor vazio</p>
-      </div>
+    <div v-else class="app-card vazio">
+      <p style="text-align: center; color: #999;">Servidor vazio</p>
     </div>
   </div>
+</div>
 </main>
     </div>
   </div>
@@ -238,13 +237,23 @@ const contarApp = (nome: string) => {
   justify-content: space-between;
   padding: 5px 8px;
   border-radius: 4px;
-  background: #444;
+  background-color: rgb(37, 36, 36);
   gap: 5px;
 
 }
 
 .app-nome {
   flex: 1;
+}
+
+.apps-no-servidor {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 12px;
+  min-height: 120px;
+  justify-content: center;
 }
 
 .servidores-grid {
