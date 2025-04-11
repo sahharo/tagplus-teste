@@ -31,7 +31,7 @@ export const useClusterStore = defineStore("cluster", {
 
   actions: {
     adicionarServidor() {
-      if (this.servidores.length >= 50) return;
+      if (this.servidores.length >= 50) return; //pode add ate 50 servidores
 
       const cor = serverColors[this.servidores.length % serverColors.length];
       const novoServidor: Servidor = {
