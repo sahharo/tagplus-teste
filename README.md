@@ -1,5 +1,7 @@
 README - Simulador de Gerenciamento de Servidores e Apps
+
 O que é este projeto?
+
 Este projeto foi criado para simular adicionando apps em servidores, de maneira simples e funcional. O objetivo é gerenciar um cluster de servidores, adicionar novos servidores, alocar apps nesses servidores e lidar com a remoção de servidores e redistribuição dos apps.
 
 Funcionalidades:
@@ -35,6 +37,11 @@ Novo Servidor: Clica no botão "Novo Servidor" para criar um novo servidor.
 Destruir Servidor: Clica no botão "Destruir" para remover o último servidor criado.
 Adicionar App: Clica no botão "+" de um app para alocá-lo em um servidor.
 Remover App: Clica no botão "−" de um app para removê-lo e/ou redistribuí-lo se necessário.
+
+Tempo de Alocação e Cor dos Apps:
+Cada app tem uma cor específica associada a ele, que é definida ao ser adicionado ao servidor. Isso ajuda a identificar rapidamente qual app está rodando em cada servidor.
+
+Além disso, o tempo de alocação de cada app no servidor é mostrado com precisão, incluindo segundos, minutos e horas desde a sua adição. Isso permite que o usuário veja exatamente quando cada app foi iniciado no sistema.
 
 Tecnologias Utilizadas:
 
